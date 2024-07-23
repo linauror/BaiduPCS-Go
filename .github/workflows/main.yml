@@ -57,7 +57,6 @@ jobs:
           path: output/
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: output/*
         env:
