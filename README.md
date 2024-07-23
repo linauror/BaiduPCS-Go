@@ -1,9 +1,19 @@
 # BaiduPCS-Go 百度网盘客户端(加强版)
 
-
 仿 Linux shell 文件处理命令的百度网盘命令行客户端.
 
 iikira/BaiduPCS-Go was largely inspired by [GangZhuo/BaiduPCS](https://github.com/GangZhuo/BaiduPCS) and this project was largely based on iikira/BaiduPCS-Go
+
+## 新版功能
+
+- 新增命令 createfileindex, cfi    生成文件索引-便于做文件列表搜索
+
+如果你仅想分享某文件夹下的目录，而不是整个文件，那么这会是一个非常好用的功能。
+
+![1](https://github.com/user-attachments/assets/b072e7f6-bc3e-4e4a-b824-50942cb9cf73)
+![2](https://github.com/user-attachments/assets/8b67c986-975a-4018-a7fb-ed961673a53a)
+![3](https://github.com/user-attachments/assets/35c9e87a-7258-42f5-accb-f5337c1c1b90)
+
 
 ## 注意
 
