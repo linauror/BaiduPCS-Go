@@ -55,9 +55,12 @@ jobs:
         with:
           name: ${{ matrix.goos }}_${{ matrix.goarch }}
           path: output/
+      - name: zip
+        run: zip "output/$BINARY_NAME.zip" "output/$BINARY_NAME" README.md
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: output/*
+          files: output/*.zip
+          draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
