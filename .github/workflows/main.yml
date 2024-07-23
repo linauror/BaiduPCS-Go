@@ -55,9 +55,3 @@ jobs:
         with:
           name: ${{ matrix.goos }}_${{ matrix.goarch }}
           path: output/
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files:  output/*
-          draft: false
-          fail_on_unmatched_files: true
